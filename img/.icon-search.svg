@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 17px;
+        opacity: 0.3;
+        fill: #fff;
+        font-family: symbols-technomart, symbols;
+      }
+    </style>
+  </defs>
+  <text id="_.icon-search" data-name=".icon-search" class="cls-1" x="1.027" y="14.472"></text>
+</svg>
