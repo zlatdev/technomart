@@ -103,11 +103,17 @@
           <b>Фильтр:<b>
         </div>
           <h3>цена:</h3>
-      <div class="sidbare__price-category"></div>
-       <div class="sidbare__from">0</div>
-       <b class="sidbare__hyphen">-</b>
-       <div class="sidbare__to">3000</div>
-        <hr>
+          <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+                <input class="min-price" type="text" value="0">
+                <input class="max-price" type="text" value="30000">
+            </div>
+      <hr>
       <div class="maker">
         <h3>Производители</h3>
           <div class="sidbare__maker-list">
@@ -132,9 +138,21 @@
       <div class="sorting">
         <b class="word-sorting">сортировка:</b>
         <ul>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+          <li>
+            <a href="#"><img src="icon-up-dir.png" width="11" height="10"></a>
+          </li>
+          <li>
+            <a href="#"><img src="down-dir.png" width="11" height="10"></a>
+          </li>
         </ul> 
       </div>
     <div class="main-content__catalog-list">
