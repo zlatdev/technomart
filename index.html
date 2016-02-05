@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header-top">
+    <header class="header-main">
       <div class="header-top">
         <div class="container">
           <a href="#" class="header-top__logo">Техномарт</a>
@@ -36,10 +36,8 @@
        	        <p>г. Санкт-петербург, ул. Б. Конюшенная, д.19/8</p>
        	      </div>
        	    <div class="header-middle__user">
-                <form action="#">
-                  <input type="submit" value="Вход">
-                  <input type="submit" value="Поиск">
-                </form>
+              <a href="#"><i class="icon-enter"></i>Вход</a>
+              <a href="#">Регистрация</a>
             </div> 
               <ul class="header-middle__data">
                 <li>
@@ -79,136 +77,140 @@
           </div>
         </div>
     </header>
-    <main>
+    <main class="main-content">
       <div class="container">
-        <section class="foto-block">
-          <div class="foto-block__checklist">
-            <span>NEW</span>
-            <p>Материалы</p>
-            <div class="materials__mini-block">
-            <button type="submit" value="На любой вкус">
-            <img class="icon" src="img/Layer 92.png" width="44" height="65">
-          </div>
-          <div class="foto-block__checklist">
-            <p>Инструмент</p>
-            <button class="materials__mini-block" type="submit" value="На все случаи">
-            <img class="icon" src="img/Layer 96.png" width="75" height="61">
-          </div>
-          <div class="foto-block__checklist">
-            <p>Техника</p>
-            <button class="materials__mini-block" type="submit" value="Для стройки">
-            <img class="icon" src="img/Layer 95.png" width="78" height="62">
-          </div>
-          <div class="foto-block__catalog">
-            <img src="img/Layer 98.png" height="266" width="620">
-            <div class="catalog__info">
-              <h2>ПЕРФОРАТОРЫ</h2>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <div class="paginator">
+        <div class="main-tabs">
+          <div class="foto-block__slider">
+            <div class="slider__paginator">
               <a class="prev" href="#prev">Назад</a>
               <a class="next" href="#next">Вперёд</a>
             </div>
-           <batton type="submit" value="Открыть каталог">
-          </div>
-          <div class="foto-block__checklist">
-            <p>Скидки 50%</p>
+            <div class="foto-block__buttons">
+             <span>NEW</span>
+             <p>Материалы</p>
+             <button type="submit" value="На любой вкус">
+             <img class="icon" src="img/Layer 92.png" width="44" height="65">
+            </div>
+           <div class="foto-block__buttons">
+             <p>Инструмент</p>
+            <button class="materials__mini-block" type="submit" value="На все случаи">
+            <img class="icon" src="img/Layer 96.png" width="75" height="61">
+           </div>
+           <div class="foto-block__buttons">
+             <p>Техника</p>
+            <button class="materials__mini-block" type="submit" value="Для стройки">
+            <img class="icon" src="img/Layer 95.png" width="78" height="62">
+           </div>
+           <div class="foto-block__buttons">
+             <p>Скидки 50%</p>
             <button class="materials__mini-block" type="submit" value="На 350 товаров">
             <img class="icon" src="img/Layer 100.png" height="72" width="59">
+           </div>
+           <div class="foto-block__buttons">
+             <p>Доставка</p>
+            <button class="materials__mini-block" type="submit" value="бесплатно">
+            <img class="icon" src="img/Layer 100.png" height="72" width="59">
+           </div>
           </div>
-          <div class="foto-block__checklist">
-            <p>Доставка</p>
-            <button class="materials__mini-block" type="submit" value="Бесплатно">
-            <img class="icon" src="img/Layer 101.png" height="63" width="78">
-          </div>
-        </section>
-        <section class="popular">
-          <div class="popular__name-block">
-            <p>Популярные товары:</p>
-            <batton type="submit" value="Все популярные товары">
-          </div>
-          <div class="popular__catalog-list">
-            <article class="catalog-list__item">
+        </div>
+      </div>
+        <div class="main-h2">
+          <h2>Популярные товары:</h2>
+          <a href="#">Все популярные товары</a>
+        </div>
+        <div class="main-catalog__items">
+           
+            <article class="item">
               <img src="img/snippet-32961 copy 3.jpg" height="164" width="184">
               <a href="#">Перфоратор BOSCH<br>BFG 9000</a>
               <div class="item__old-price">32500 P.</div>
               <div class="item__price">25500 P.</div>
             </article>
-            <article class="catalog-list__item">
+            <article class="item">
               <img src="img/snippet-18927 copy 3.jpg" height="112" width="127">
               <a href="#">Перфоратор BOSCH<br>BFG 3000</a>
               <div class="item__old-price">22500 P.</div>
               <div class="item__price">15500 P.</div>
             </article>
-            <article class="catalog-list__item">
+            <article class="item">
               <img src="img/snippet-945 copy 2.jpg" height="128" width="144">
               <a href="#">Перфоратор BOSCH<br>BFG 6000</a>
               <div class="item__old-price">30500 P.</div>
               <div class="item__price">25500 P.</div>
             </article>
-            <article class="catalog-list__item">
+            <article class="item">
               <span>NEW</span>
               <img src="img/snippet-18927 copy 3.jpg" height="112" width="127">
               <a href="#">Перфоратор BOSCH<br>BFG 2000</a>
               <div class="item__price">12500 P.</div>
-            </article>
-          </div>
-          <div class="popular__name-block">
-            <p>Популярные производители:</p>
-            <batton type="submit" value="Все производители">
-          </div>
-          <div class="popular__block-firm">
-            <div class="popular__block-firm__name">
+            </article> 
+        </div>
+        <div class="main-catalog__items">
+        <div class="main-h2">
+          <h2>Популярные производители:</h2>
+          <a href="#">Все производители</a>
+        </div>
+        <div class="main-manufactures">
+          <div class="main-manufactures__branded-sign">
               <a href="#"><img src="img/bosch.png" height="37" width="126" alt="Bosch" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/Makita.png" height="40" width="123" alt="Makita" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/DeWALT.png" height="44" width="146" alt="DeWalt" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/Интерскол.png" height="88" width="200" alt="Интерскол" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/Hitachi.png" height="31" width="169" alt="HITACHI" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/LG.png" height="73" width="121" alt="LG" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/AEG.png" height="96" width="151" alt="AEG" ></a>
-            </div>
-            <div class="popular__block-firm__name">
-              <a href="#"><img src="img/Metabo.png" height="69" width="204" alt="METABO" ></a>
-            </div>
+           </div>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/Makita.png" height="40" width="123" alt="Makita" ></a>
+          </div> 
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/DeWALT.png" height="44" width="146" alt="DeWalt" ></a>
           </div>
-        </section>
-        <section class="suggestions">
-          <div class="suggestions__motto">
-            <h2>Сервисы</h2>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/Интерскол.png" height="88" width="200" alt="Интерскол" ></a>
+          </div>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/Hitachi.png" height="31" width="169" alt="HITACHI" ></a>
+          </div>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/LG.png" height="73" width="121" alt="LG" ></a>
+          </div>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/AEG.png" height="96" width="151" alt="AEG" ></a>
+          </div>
+          <div class="main-manufactures__branded-sign">
+            <a href="#"><img src="img/Metabo.png" height="69" width="204" alt="METABO" ></a>
+          </div>
+        </div>  
+      </div>
+    <div class="main-services">
+      <div class="container">
+        <div class="services__descr">
+          <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-          </div>
-          <div class="suggestions__services">
-            <a href="#">Доставка</a>
+        </div>
+        <div class="services__menu">
+          <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Кредит</a>
-            <img src="img/Layer 118.jpg" height="272" width="10">
-          </div>
-          <div class="suggestions__shipping">
-            <h2>ДОСТАВКА</h2>
+        </div>
+        <div class="services__items">
+          <h2>ДОСТАВКА</h2>
             <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш на этаж!</p>
-          </div>
-          <div class="suggestions__foto-car">
             <img src="img/Layer 131.png" height="146" width="206">
-          </div>
-        </section>
-        <section lass="opportunities">
-          <div class="opportunities__left-block">
+        </div>
+        <div class="services__items">
+          <h2>ДОСТАВКА</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш на этаж!</p>
+            <img src="img/Layer 131.png" height="146" width="206">
+        </div>
+        <div class="services__items">
+          <h2>ДОСТАВКА</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш на этаж!</p>
+            <img src="img/Layer 131.png" height="146" width="206">
+        </div>
+      </div>
+    </div>    
+    <section lass="clearfix">
+          <div class="main__left-block main__about-company">
             <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставить равнодушными любителей с экономить на гастарбайтерах.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="list-compani">
+          <ul class="list-styled">
             <li>
               <a href="#">Деловые линии</a>
             </li>
@@ -219,18 +221,14 @@
               <a href="#">ЖелДорЭкспедиция</a>
             </li>
           </ul>
-          <div class="link">
             <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
-          </div>
         </div>
-        <div class="opportunities__right-block">
+        <div class="main__right-block">
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами,<br>Заехав в наш офис:</p>
           <img src="img/Слой 5.png" height="158" width="300" ait="Карта">
-          <div class="right-block__entri">
-            <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-          </div>
-         </div>
+          <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        </div>
        </section>
       </div>
     </main>    
@@ -258,8 +256,10 @@
               <li>
                 <a href="#">Контакты</a>
               </li>
-              </ul>
+            </ul>
           </div>
+        </div>
+      </div>
         <div class="main-footer__menu__bottom">
           <ul>
             <li>
@@ -277,9 +277,9 @@
           </ul>
         </div>
       </div>
-      <div class="main-footer__working-information">
+      <div class="bottom-footer">
         <div class="container">
-        <div class="informaition"> 
+        <div class="bottom-footer__informaition"> 
           <p>2010-2016 Компания "Техномарт"<br>
           Все права защищены</p>
         </div>
