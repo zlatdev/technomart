@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-top">
@@ -19,7 +19,7 @@
                   <a class="header-top__bookmark" href="#top">Закладки:0</a>
                 </li>
                 <li>
-                  <a class="header-top__basket" href="#">Корзина</a>
+                  <a class="header-top__basket basket__full" href="#">Корзина</a>
                 </li>
                 <li>
                   <a  class="header-top__booking" href="#">Оформить Заказ</a>
@@ -95,12 +95,12 @@
             </li>
           <ul>
         </div>
-        <div class="main-content__perforators">
+        
           <h1>Перфораторы<h1>
-        </div>
-        <div class="main-content__catalog-filter">
-          <div class="catalog-filter__price-block">
-            <div class="filter">Фильтр:</div>
+        
+        <div class="catalog-filter">
+          <form action="#">
+            <div class="filter__h2">Фильтр:</div>
             <h3>цена:</h3>
             <div class="range-filter">
               <div class="range-controls">
@@ -112,29 +112,29 @@
                 <input class="min-price" type="text" value="0">
                 <input class="max-price" type="text" value="30000">
               </div>
-            </div>
+            
           </div>  
-        <hr>
-        <form action="#">
+        
+        
           <div class="maker__group">
             <h3>Производители</h3>
-            <input type="checkbox" checked id="chx1"><label for="chx1">BOSCH</label>
-            <input type="checkbox" id="chx2"><label for="chx2">Интерскол</label>
-            <input type="checkbox" checked id="chx3"><label for="chx3">MAKITA</label>
-            <input type="checkbox" id="chx4"><label for="chx4">DEWALT</label>
-            <input type="checkbox" id="chx5"><label for="chx5">HITACHI</label>
+            <input type="checkbox" name="firm1" value="BOSCH"checked id="chx1"><label for="chx1">BOSCH</label>
+            <input type="checkbox" name="firm2" value="Interscol"id="chx2"><label for="chx2">Интерскол</label>
+            <input type="checkbox" name="firm3" value="MAKITA"checked id="chx3"><label for="chx3">MAKITA</label>
+            <input type="checkbox" name="firm4" value="DEWALT"id="chx4"><label for="chx4">DEWALT</label>
+            <input type="checkbox" name="firm5" value="HITACHI"id="chx5"><label for="chx5">HITACHI</label>
           </div>
-        <hr>
+        
         <div class="maker__group">
           <h3>Питание:</h3>
           <input type="radio" name="battery" value="accumulator" checked>АККУМУЛЯТОРНЫЕ
-          <input type="checkbox" name="battery" value="network">СЕТЕВЫЕ
+          <input type="radio" name="battery" value="network">СЕТЕВЫЕ
         </div>
-          <button class="btn" type="submit">ПОКАЗАТЬ</button>
+          <button class="btn btn-filter" type="submit">ПОКАЗАТЬ</button>
         </form>
         <div class="catalog-content">
-          <div class="sorting">
-            <b class="word-sorting">сортировка:</b>
+          <div class="catalog-sorting">
+            <h3 class="catalog-sorting__h3">сортировка:</h3>
             <ul>
               <li>
                 <a href="#">По цене</a>
@@ -153,7 +153,7 @@
               </li>
             </ul> 
           </div>
-        <div class="main-content__catalog-list">
+        <div class="catalog-list">
           <article class="catalog-list__item">
             <span>NEW</span>
             <img src="img/snippet-18927 copy 3.jpg" height="112" width="127">
@@ -250,7 +250,7 @@
       </div>
     </div> 
   </div>
-  <div class="main-content__little-about">
+  <div class="catalog__little-about">
     <div class="container">
         <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p>Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпече, бетоне и камне.<br>
