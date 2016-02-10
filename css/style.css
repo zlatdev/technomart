@@ -23,42 +23,44 @@ body {
 /*css для index*/
 .header-main {
 	min-height: 320px;
-	margin-bottom: 20px;
-	margin: 0;
-	padding: 0;
-	background-color: #f2f6f8;
+	margin-bottom: 58px;
+	background-color: #f1f5f7;
 }.header-top {
-	min-height: 42px;
+	height: 42px;
 	margin-bottom: 40px;
 	background-color: #293449;
 }
 .header-middle__summary {
 	float: left;
-	width: 310px;
+	width: 300px;
 	min-height: 100px;
-	margin-right: 10px; 
+	box-sizing: border-box;
+	padding-left: 50px;
+	margin-right: 20px; 
+	margin-top: 70px;
 	
-	margin-bottom: 20px;
+	
 	background-color: #34495e; /*только для наглядности*/
 }
 .header-middle__contact {
 	float: left;
-	width: 310px;
+	width: 300px;
 	min-height: 100px;
-	margin-right: 10px;
-	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-top: 70px;
 	background-color: #34495e; /*только для наглядности*/
 }
 .header-middle__making {
 	float: right;
-	width: 320px;
+	width: 282px;
 	min-height: 100px;
-	margin-bottom: 20px;
+	margin-top: 70px;
 	background-color: #34495e; /*только для наглядности*/
 }
 .main-navigation {
 	clear: both;
-	min-height: 60px;
+	height: 60px;
+	margin-top: 40px;
 	margin-bottom: 60px;
 	background-color: #32425c;
 }
@@ -67,37 +69,44 @@ body {
 	background-color: #ffffff;
 }
 .main-tabs {
-	width:940px;
+	
 	min-height: 410px;
-	margin-top: 20px;
+	
 	margin-bottom: 50px;
 	font-size:0;
 	background-color: #c8a07c;/*только для наглядности*/
 }
+.main-tabs__left {
+	float: left;
+	width: 300px;
+}
+.main-tabs__right {
+	float: right;
+	width: 300px;
+}
 .foto-block__buttons {
 	display: inline-block;
 	vertical-align: top;
+
 	width: 300px;
 	height: 123px;
-	margin-right: 20px;
 	margin-bottom: 20px;
 	background-color: #2d3bf6;/*только для наглядности*/
 }
-.foto-block__buttons:nth-child(3n) {
-	margin-right: 0;
+.main-tabs__left .foto-block__buttons:first-child {
+	margin-right: 20px;
 }
-.foto-block__buttons:nth-child(4) {
-	margin-left:640px;
-	margin-right: 0;
+/*.main-tabs__left .foto-block__buttons:nth-child(1) {
+	float: left;
 }
-.foto-block__buttons:nth-child(5) {
-	margin-left:640px;
-	margin-right: 0;
+.main-tabs__left .foto-block__buttons:nth-child(2) {
+	float: right;
+}*/
+.main-tabs__right .foto-block__buttons:last-child {
 	margin-bottom: 0;
-	
 }
 .foto-block__slider {
-	
+	/*clear: both;*/
 	width: 621px;
 	height: 267px;
 	margin-right: 20px;
@@ -268,7 +277,22 @@ body {
 .catalog-list {
 	min-height: 995px;
     margin-bottom: 52px;
+    font-size:0;
     background-color: #ee3643;/*только для наглядности*/
+}
+.catalog-list__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	height: 318px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #2d3bf6;/*только для наглядности*/
+}
+.catalog-list__item:nth-child(3n) {
+	margin-right: 0;
+}
+
 }
 .main-content__paginator {
 	min-height: 40px;
