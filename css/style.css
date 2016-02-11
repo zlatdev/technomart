@@ -30,6 +30,63 @@ body {
 	margin-bottom: 40px;
 	background-color: #293449;
 }
+.header-top__logo {
+	display: block;
+	width: 220px;
+	height: 32px;
+	font-size: 24px;
+	line-height: 24px;
+	padding-top: 9px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: lowercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;
+}
+.header-top__logo:hover {
+	background-color: #ca2c37;
+	border-bottom: 5px solid #9a212a;
+}
+.header-top__logo:active {
+	background-color: #ba2732;
+	border-bottom: 5px solid #8e1e26;
+}
+.header-top__search {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	max-width: 270px;
+	margin-left: 225px;
+}
+.header-top__panel {
+	display: inline-block;
+	vertical-align: top;
+	color: #ee3643;
+	list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.header-top__panel li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 23px;
+}
+.header-top__bookmark {
+	display: block;
+	max-width: 150px;
+}
+.header-top__basket {
+	display: block;
+	max-width: 150px;
+}
+.header-top__booking {
+	display: block;
+	max-width: 150px;
+}
 .header-middle__summary {
 	float: left;
 	width: 300px;
@@ -78,7 +135,7 @@ body {
 }
 .main-tabs__left {
 	float: left;
-	width: 300px;
+	width: 620px;
 }
 .main-tabs__right {
 	float: right;
@@ -96,12 +153,7 @@ body {
 .main-tabs__left .foto-block__buttons:first-child {
 	margin-right: 20px;
 }
-/*.main-tabs__left .foto-block__buttons:nth-child(1) {
-	float: left;
-}
-.main-tabs__left .foto-block__buttons:nth-child(2) {
-	float: right;
-}*/
+
 .main-tabs__right .foto-block__buttons:last-child {
 	margin-bottom: 0;
 }
