@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-size: 16px;
 	line-height: 23px;
-    color: #000000;
+    color: #ffffff;
     font-weight: normal;
     font-family: "Cuprum Italic", "Arial", sans-serif;
 }
@@ -53,39 +53,65 @@ body {
 	border-bottom: 5px solid #8e1e26;
 }
 .header-top__search {
-	display: inline-block;
-	vertical-align: top;
+	float: left;
+	position: relative;
 	margin: 0;
 	max-width: 270px;
-	margin-left: 225px;
+	margin-left: 220px;
 }
+.header-top__search::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: #293449 url("img/icon-exit.png/sprite.png") no-repeat;
+  background-position: -5px -184px;
+  opacity: 0.3;
+}
+.header-top__search:hover::before {
+  opacity: 1;
+  }
 .header-top__panel {
-	display: inline-block;
-	vertical-align: top;
-	color: #ee3643;
+	float: right;
 	list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
     font-size: 0;
 }
 .header-top__panel li {
 	display: inline-block;
-	vertical-align: top;
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 24px;
+	vertical-align: top;
+	
 }
-.header-top__bookmark {
+.header-top__panel a {
 	display: block;
-	max-width: 150px;
+	position: relative;
+	padding: 12px;
+    padding-left: 45px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #293449;
 }
-.header-top__basket {
-	display: block;
-	max-width: 150px;
+.header-top__panel a:hover {
+	background-color: #212a3a;
 }
-.header-top__booking {
-	display: block;
-	max-width: 150px;
+.header-top__panel a:active{
+	color: #85898f;
+	background-color: #161d29;
+}
+
+.header-top__panel .header-top__booking {
+	padding-left: 20px;
+	background-color: #63a63e;
+}
+.header-top__panel .header-top__booking:hover {
+	background-color: #5fbb2d;
+}
+.header-top__panel .header-top__booking:active {
+	color: #a4bf94;
+	background-color: #518534;
 }
 .header-middle__summary {
 	float: left;
@@ -94,32 +120,90 @@ body {
 	box-sizing: border-box;
 	padding-left: 50px;
 	margin-right: 20px; 
-	margin-top: 70px;
-	
-	
-	background-color: #34495e; /*только для наглядности*/
+	color: #ee3643;
 }
 .header-middle__contact {
 	float: left;
 	width: 300px;
 	min-height: 100px;
 	margin-right: 20px;
-	margin-top: 70px;
-	background-color: #34495e; /*только для наглядности*/
+}
+.header-middle__phone{
+	display: block;
+	width: 193px;
+	height: 42px;
+	padding-left: 70px;
+	font-size: 21px;
+	padding-top: 11px;
+	border: 4px solid #ffffff;
+	color: #e9292a;
+}
+.header-middle__contact p {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	color: #32425c;
 }
 .header-middle__making {
 	float: right;
 	width: 282px;
 	min-height: 100px;
-	margin-top: 70px;
-	background-color: #34495e; /*только для наглядности*/
+	font-size: 0;
+	background-color: #c8a07c;/*только для наглядности*/
+}
+.header-middle__user {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+.header-middle__user a{
+	display: block;
+	width: 81px;
+	height: 46px;
+	
+	padding-left: 41px;
+	font-size: 21px;
+	color: #000000;
+	background-color: #fffff;
+}
+.header-middle__user a:last-child {
+	width: 150px;
+	text-align: center;
 }
 .main-navigation {
 	clear: both;
-	height: 60px;
+	height: 55px;
 	margin-top: 40px;
 	margin-bottom: 60px;
+	border-bottom: 5px solid #293449;
 	background-color: #32425c;
+	
+}
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+	display: inline-block;
+	font-size: 17px;
+	line-height: 17px;
+	vertical-align: top;
+}
+.main-navigation a {
+	display: block;
+	padding: 20px 27px;	
+	color: #f1f1f3;
+	text-decoration: none;
+}
+.main-navigation a:hover {
+	background-color: #293449;
+}
+.main-navigation a:active {
+	color: #8e939c;
+	background-color: #1d2739;
 }
 .main-content {
 	margin-top: 20px;
@@ -144,8 +228,7 @@ body {
 .foto-block__buttons {
 	display: inline-block;
 	vertical-align: top;
-
-	width: 300px;
+    width: 300px;
 	height: 123px;
 	margin-bottom: 20px;
 	background-color: #2d3bf6;/*только для наглядности*/
@@ -354,4 +437,76 @@ body {
 	clear: both;
 	min-height: 260px;
 	background-color: #2d3bf6;/*только для наглядности*/
+}
+/*сss код для sprite*/
+.sprite {
+    background-image: url("../img/icon-exit.png/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite--icon-down-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -31px;
+}
+
+.sprite--icon-facebook-copy {
+    width: 10px;
+    height: 18px;
+    background-position: -5px -51px;
+}
+
+.sprite--icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -5px -79px;
+}
+
+.sprite--icon-instagramm-copy {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -101px;
+}
+
+.sprite--icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -5px -128px;
+}
+
+.sprite--icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -5px -155px;
+}
+
+.sprite--icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -184px;
+}
+
+.sprite--icon-up-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -211px;
+}
+
+.sprite--icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -231px;
+}
+
+.sprite--icon-vk-copy {
+    width: 20px;
+    height: 12px;
+    background-position: -5px -259px;
 }
