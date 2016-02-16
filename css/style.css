@@ -7,7 +7,7 @@ body {
 	line-height: 23px;
     color: #ffffff;
     font-weight: normal;
-    font-family: "Cuprum Italic", "Arial", sans-serif;
+    font-family: "Cuprum Italic","PT Sans", "Arial", sans-serif;
 }
 .clearfix::after {
   content: "";
@@ -193,26 +193,45 @@ body {
 	width: 300px;
 	
 }
-.header-middle__data {
-	width: 300px;
-	height: 42px;
-}
-.header-middle__data p {
-	width: 194px;
-	height: 45px;
+
+.header-middle__users p {
 	padding-left: 46px;
 	padding-right: 60px;
-	font-size: 21px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+	margin: 0px;
+	font-size: 17px;
 	line-height: 18px;
 	font-family: "Cuprum", "Arial", sans-serif;
-	font-weight: bold;
 	box-sizing: border-box;
 	color: #000000;
 	background-color: #ffffff;
 }
+.header-middle__data {
+	width: 300px;
+	height: 42px;
+	padding: 0px;
+	margin: 0px;
+	
+}
+.header-middle__data ul {
+    list-style-type: disc;
+}
+.header-middle__data li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	margin-left: 15px;
+    margin-top: 10px;
+   
+}
 .header-middle__data a {
-	width: 194px;
-	height: 45px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	color: #000000;
+
+
 }
 .main-navigation {
 	clear: both;
@@ -237,9 +256,13 @@ body {
 }
 .main-navigation a {
 	display: block;
-	padding: 20px 24px;	
+	height: 55px;
+	padding-top: 20px;
 	color: #f1f1f3;
 	text-decoration: none;
+	text-align: center;
+	
+	box-sizing: border-box;
 }
 .main-navigation a:first-child {
 	padding-left: 50px;
@@ -332,8 +355,6 @@ body {
     padding-top: 9px;
     color: #ffffff;
     background-color: #dda028;
-    
-    
  }
 .main-tabs__left .foto-block__buttons .slogan:nth-child(2) {
  	background-color: #429dc7;
@@ -392,7 +413,7 @@ body {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	width: 218px;
+	width: 217px;
 	height: 320px;
 	margin-right: 20px;
 	border: 1px solid #e5e5e5;
@@ -457,7 +478,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	width: 218px;
+	width: 217px;
 	height: 145px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -908,17 +929,48 @@ body {
 
 
 /*css для inner*/
+.main-content {
+	padding: 0;
+	margin: 0;
+}
 .breadcrumbs {
 	min-height: 20px;
 	margin-bottom: 20px;
 	background-color: #2d3bf6;/*только для наглядности*/
 }
-.main-content h1 {
-	display: block;
-	min-height: 90px;
-	margin-bottom: 20px;
-	background-color: #f7f3ec;/*только для наглядности*/
+.breadcrumbs ul {
+    
+
 }
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.breadcrumbs a {
+    font-size: 13px;
+    font-weight: 18px;
+    font-family: "Sans", "Arial", sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+.topic {
+	height: 90px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	color: #32425c;
+	background-color: #f7f3ec;
+}
+
+.topic h1 {
+	
+	padding-left: 30px;
+	padding-top: 28px;
+}	
+
 .catalog-filter {
 	float: left;
 	width: 220px;
@@ -927,38 +979,51 @@ body {
 	margin-bottom: 60px;
 	background-color: #2d3bf6;/*только для наглядности*/
 }
-.catalog-catalog-content {
+.catalog-content {
 	float: right;
 	width: 700px;
 	min-height: 1147px;
 	margin-bottom: 60px;
-	background-color: #2d3bf6;/*только для наглядности*/
+	
 }
 .catalog-sorting {
-    min-height: 40px;
+    height: 40px;
     margin-bottom: 20px;
     background-color: #ee3643;/*только для наглядности*/
+}
+.catalog-sorting__h3 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 12px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PTSans", "Arial", sans-serif;
+	color: #000000;
+}
+.catalog-sorting ul {
+	float: left;
+	width: 480px;
+}
+.catalog-sorting li {
+	display: inline-block;
+	vertical-align: top;
+    margin-right: 60px;
+}
+.catalog-sorting a {
+	text-decoration: none;
+	color: #acaaa5;
+}
+.catalog-sorting__guides {
+	float: right;
+	width: 80px;
 }
 .catalog-list {
 	min-height: 995px;
     margin-bottom: 52px;
     font-size:0;
-    background-color: #ee3643;/*только для наглядности*/
-}
-.catalog-list__item {
-	display: inline-block;
-	vertical-align: top;
-	width: 220px;
-	height: 318px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	background-color: #2d3bf6;/*только для наглядности*/
-}
-.catalog-list__item:nth-child(3n) {
-	margin-right: 0;
+    
 }
 
-}
 .main-content__paginator {
 	min-height: 40px;
 	background-color: #ee3643;/*только для наглядности*/
