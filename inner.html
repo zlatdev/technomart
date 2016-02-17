@@ -4,15 +4,13 @@
       <meta charset="utf-8">
       <title>Техномарт</title>
       <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic' rel='stylesheet' type='text/css'>'
-    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+      <link href='<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic' rel='stylesheet' type='text/css'>'
       <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-       <header class="header-main">
+    <header class="header-main">
       <div class="header-top">
-        <div class="container">
+        <div class="container clearfix">
           <a href="#" class="header-top__logo">Техномарт</a>
           <form action="#" class="header-top__search">
             <input type="image">
@@ -57,8 +55,8 @@
                   </ul> 
           </div>
         </div>
-        <nav class="main-navigation clearfix">
-          <div class="container">
+        <div class="container">
+          <nav class="main-navigation clearfix">
             <ul>
               <li>
                 <a href="#">Главная</a>
@@ -80,10 +78,10 @@
               </li>
               <li>
                 <a href="#">Контакты</a>
-            </li>
+              </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
     </header>
       <main class="main-content clearfix">
         <div class="container">
@@ -112,7 +110,7 @@
               <h3>цена:</h3>
               <div class="range-filter">
                 <div class="range-controls">
-                  <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                  <div class="scale"><div style="margin-left:10px;width:125px;" class="bar"></div></div>
                   <div class="toggle min-toggle"></div>
                   <div class="toggle max-toggle"></div>
                 </div>
@@ -120,15 +118,17 @@
                   <input class="min-price" type="text" value="0">
                   <input class="max-price" type="text" value="30000">
                 </div>
-              </div>  
+              </div> 
+              <div class="crease"></div> 
               <div class="maker__group">
-                <h3>Производители</h3>
+                <h3>Производители:</h3>
                 <input type="checkbox" name="firm1" value="BOSCH"checked id="chx1"><label for="chx1">BOSCH</label>
                 <input type="checkbox" name="firm2" value="Interscol"id="chx2"><label for="chx2">Интерскол</label>
                 <input type="checkbox" name="firm3" value="MAKITA"checked id="chx3"><label for="chx3">MAKITA</label>
                 <input type="checkbox" name="firm4" value="DEWALT"id="chx4"><label for="chx4">DEWALT</label>
                 <input type="checkbox" name="firm5" value="HITACHI"id="chx5"><label for="chx5">HITACHI</label>
               </div>
+              <div class="crease"></div> 
               <div class="maker__group">
                  <h3>Питание:</h3>
                  <input type="radio" name="battery" value="accumulator" checked>АККУМУЛЯТОРНЫЕ
@@ -138,7 +138,7 @@
             </form>
             </div>
             <div class="catalog-content">
-            <div class="catalog-sorting">
+              <div class="catalog-sorting">
               <h3 class="catalog-sorting__h3">сортировка:</h3>
               <ul>
                 <li>
@@ -155,101 +155,97 @@
                 <a href="#"><img src="down-dir.png" width="11" height="10"></a>
                 <a href="#"><img src="icon-up-dir.png" width="11" height="10"></a>
               </div> 
-            </div>
-            <div class="catalog-list clearfix">
+              </div>
+              <div class="catalog-list clearfix">
               <article class="catalog-list__item">
-                <img src="img/catalog-img1.jpg/prod-img2.jpg" height="168" width="218">
-                <a href="#">Перфоратор BOSCH<br>BFG 3000</a>
-                <div class="item__old-price">22500 P.</div>
-                <div class="item__price">15500 P.</div>
                 <div class="item__hidden">
                   <a class="buy" href="#">КУПИТЬ</a>
                   <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
                 </div>
+                <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
+                <a href="#">Перфоратор BOSCH<br>BFG 3000</a>
+                <div class="item__old-price">22500 P.</div>
+                <div class="item__price">15500 P.</div>
               </article>
               <article class="catalog-list__item">
-                
-                <img src="img/catalog-img1.jpg/prod-img3.jpg" height="128" width="144">
-                <a href="#">Перфоратор BOSCH<br>BFG 6000</a>
-                <div class="item__old-price">30500 P.</div>
-                <div class="item__price">25500 P.</div>
                 <div class="item__hidden">
                   <a class="buy" href="#">КУПИТЬ</a>
                   <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
                 </div>
+                <img src="img/catalog-img1.jpg/prod-img3.jpg" height="128" width="144">
+                <a href="#">Перфоратор BOSCH<br>BFG 6000</a>
+                <div class="item__old-price">30500 P.</div>
+                <div class="item__price">25500 P.</div>
               </article>
               <article class="catalog-list__item">
+                <div class="item__hidden">
+                  <a href="#">КУПИТЬ</a>
+                  <a href="#">В ЗАКЛАДКИ</a>
+                </div>
                 <div class="flag flag-new">новинка</div>
                 <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
                 <a href="#">Перфоратор BOSCH<br>BFG 2000</a>
                 <div class="item__price">12500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
-                         <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
+                <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
                 <a href="#">Перфоратор BOSCH<br>BFG 3000</a>
                 <div class="item__old-price">22500 P.</div>
                 <div class="item__price">15500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
                 <div class="flag flag-new">новинка</div>
                 <img src="img/catalog-img1.jpg/prod-img3.jpg" height="128" width="144">
                 <a href="#">Перфоратор BOSCH<br>BFG 6000</a>
                 <div class="item__old-price">30500 P.</div>
                 <div class="item__price">25500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
-                
                 <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
                 <a href="#">Перфоратор BOSCH<br>BFG 2000</a>
                 <div class="item__price">12500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
                 <div class="flag flag-new">новинка</div>
                 <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
                 <a href="#">Перфоратор BOSCH<br>BFG 3000</a>
                 <div class="item__old-price">22500 P.</div>
                 <div class="item__price">15500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
-               
                 <img src="img/catalog-img1.jpg/prod-img3.jpg" height="128" width="144">
                 <a href="#">Перфоратор BOSCH<br>BFG 6000</a>
                 <div class="item__old-price">30500 P.</div>
                 <div class="item__price">25500 P.</div>
+              </article>
+              <article class="catalog-list__item">
                 <div class="item__hidden">
                   <a href="#">КУПИТЬ</a>
                   <a href="#">В ЗАКЛАДКИ</a>
                 </div>
-              </article>
-              <article class="catalog-list__item">
-               
                 <img src="img/catalog-img1.jpg/prod-img2.jpg" height="112" width="127">
                 <a href="#">Перфоратор BOSCH<br>BFG 2000</a>
                 <div class="item__price">12500 P.</div>
-                <div class="item__hidden">
-                  <a href="#">КУПИТЬ</a>
-                  <a href="#">В ЗАКЛАДКИ</a>
-                </div>
               </article>
               <div class="main-content__paginator">
                 <a class="current" href="#">1</a>
@@ -257,17 +253,17 @@
                 <a href="#">3</a>
                 <a href="#">СЛЕДУЮЩАЯ</a>
                 </div>
+              </div>
             </div>
-            </div>
-          
-          <div class="catalog__little-about">
-            <div class="container">
+        </div>
+            <div class="catalog__little-about">
+              <div class="container">
               <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
               <p>Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпече, бетоне и камне.<br>
               Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молтка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+              </div>
             </div>
-          </div>
-        </div>
+        
       </main>
       <footer class="main-footer">
         <div class="container  clearfix">
