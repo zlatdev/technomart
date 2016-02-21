@@ -68,7 +68,7 @@ body {
     padding-top: 13px;
     padding-left: 15px;
     text-indent: -1000px;
-    background: #293449 url("../img/icon-exit.png/sprite.png") no-repeat;
+    background: #293449 url("../img/icon-exit/sprite.png") no-repeat;
     background-position: -5px -259px;
     border: none;
     opacity: 0.3;
@@ -98,14 +98,14 @@ body {
 .header-top__search input[type="search"]:focus + input[type="submit"] {
 	width: 17px;
     height: 17px;
-	background: url("../img/icon-exit.png/sprite2.png") no-repeat;
+	background: url("../img/icon-exit/sprite2.png") no-repeat;
 	background-position: -5px -27px;
 	opacity: 1; 
 }
 .header-top__search input[type="search"]:hover + input[type="submit"] {
 	width: 17px;
     height: 17px;
-	background: #293449 url("../img/icon-exit.png/sprite.png") no-repeat;
+	background: #293449 url("../img/icon-exit/sprite.png") no-repeat;
     background-position: -5px -259px;
 	opacity: 1; 
 }
@@ -162,7 +162,7 @@ body {
 	left: 14px;
 	width: 14px;
     height: 16px;
-	background: #293449 url("../img/icon-exit.png/sprite.png") no-repeat; 
+	background: #293449 url("../img/icon-exit/sprite.png") no-repeat; 
 	background-position: -5px -31px;
 	opacity: 0.3;
 }
@@ -173,7 +173,7 @@ body {
 	left: 14px;
 	width: 17px;
     height: 16px;
-	background: #293449 url("../img/icon-exit.png/sprite.png") no-repeat; 
+	background: #293449 url("../img/icon-exit/sprite.png") no-repeat; 
 	background-position: -5px -5px;
     opacity: 0.3;
 }
@@ -224,7 +224,7 @@ body {
 	position: absolute;
 	top: 16px;
 	left: 13px;
-	background: #f2f6f8 url("../img/icon-exit.png/sprite.png");
+	background: #f2f6f8 url("../img/icon-exit/sprite.png");
 	width: 19px;
     height: 19px;
     background-position: -5px -208px;
@@ -283,7 +283,7 @@ body {
 	position: absolute;
 	top: 14px;
 	left: 14px;
-	background: #fff url("../img/icon-exit.png/sprite.png") no-repeat;
+	background: #fff url("../img/icon-exit/sprite.png") no-repeat;
 	width: 21px;
     height: 17px;
     background-position: -5px -181px;
@@ -293,7 +293,7 @@ body {
 	position: absolute;
 	top: 14px;
 	left: 14px;
-	background: #fff url("../img/icon-exit.png/sprite.png") no-repeat;
+	background: #fff url("../img/icon-exit/sprite.png") no-repeat;
 	width: 20px;
     height: 17px;
     background-position: -5px -77px;
@@ -324,7 +324,7 @@ body {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     width: 20px;
     height: 18px;
     background-position: -5px -306px;
@@ -334,7 +334,7 @@ body {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     /*надо вставить иконку*/
 }
 .header-middle__users p::before {
@@ -342,7 +342,7 @@ body {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     width: 20px;
     height: 18px;
     background-position: -5px -306px;
@@ -352,7 +352,7 @@ body {
     position: absolute;
     top: 14px;
     left: 268px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     width: 21px;
     height: 17px;
     background-position: -5px -181px;
@@ -362,7 +362,7 @@ body {
     position: absolute;
     top: 14px;
     left: 268px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     width: 20px;
     height: 17px;
     background-position: -5px -77px;
@@ -372,7 +372,7 @@ body {
     position: absolute;
     top: 14px;
     left: 268px;
-    background: #fff url("../img/icon-exit.png/sprite.png");
+    background: #fff url("../img/icon-exit/sprite.png");
     width: 21px;
     height: 17px;
     background-position: -5px -181px;
@@ -525,10 +525,10 @@ body {
 	
 }
 .slider__item:nth-child(1) {
-	background-image: url("../img/slider.jpg/slider1.jpg");
+	background-image: url("../img/slider/slider1.jpg");
 }
 .slider__item:nth-child(2) {
-	background-image: url("../img/slider.jpg/slider2.jpg");
+	background-image: url("../img/slider/slider2.jpg");
 }
 .slider__item:nth-child(1) {
 	display: block;
@@ -579,7 +579,7 @@ body {
 	top: 116px;
 	left: 25px;
     text-indent: -1000px;
-    background-image: url("../img/fotopickhe-img.png/arrow-left.png");
+    background-image: url("../img/fotopickhe-img/arrow-left.png");
     background-repeat: no-repeat;
     background-position: 0 0;
    
@@ -589,7 +589,7 @@ body {
 	top: 116px;
 	right: 25px;
     text-indent: -1000px;
-    background-image: url("../img/fotopickhe-img.png/arrow-right.png");
+    background-image: url("../img/fotopickhe-img/arrow-right.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   
@@ -750,7 +750,7 @@ body {
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
-    background: url("../img/icon-exit.png/label3.png") no-repeat 0 0;
+    background: url("../img/icon-exit/label3.png") no-repeat 0 0;
 }
 .catalog__item a {
 	display: block;
@@ -852,7 +852,7 @@ body {
 	min-height: 271px;
 	margin-right: 20px;
 	margin-bottom: 46px;
-	background: url("../img/services-img.png/line.png") no-repeat 230px 0px;
+	background: url("../img/services-img/line.png") no-repeat 230px 0px;
 
 }
 .services__menu a {
@@ -969,7 +969,7 @@ body {
 .main__left-block p:last-child {
 	margin-bottom: 20px;
 }
-.list-styled ul {
+ul.list-styled {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 10px;
@@ -1216,7 +1216,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url("../img/icon-exit.png/sprite.png");
+    background-image: url("../img/icon-exit/sprite.png");
     background-repeat: no-repeat;
 }
 .social-vk::before {
@@ -1325,8 +1325,14 @@ body {
     vertical-align: top;
     margin-right: 38px;
 }
-/*.breadcrumbs .icon {
-    width: 15px;
+.breadcrumbs .icon {
+	display: inline-block;
+    background: url("img/icon-exit/sprite2.png") no-repeat;
+    width: 22px;
+    height: 12px;
+    background-position: 0 -132px;
+}
+    /*width: 15px;
     height: 12px;
     background: url("../img/icon-exit.png/sprite2.png");
     background-position: -5px -5px;
@@ -1336,7 +1342,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 16px;
-	background: url("../img/icon-exit.png/sprite.png");
+	background: url("../img/icon-exit/sprite.png");
 	width: 8px;
     height: 12px;
     background-position: -5px -237px;
@@ -1473,7 +1479,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/slider-filter.png/sprit-fl.png");
+    background-image: url("../img/slider-filter/sprit-fl.png");
     background-repeat: no-repeat;
     width: 23px;
     height: 23px;
@@ -1489,7 +1495,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/slider-filter.png/sprit-fl.png");
+    background-image: url("../img/slider-filter/sprit-fl.png");
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
@@ -1501,7 +1507,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/slider-filter.png/sprit-fl.png");
+    background-image: url("../img/slider-filter/sprit-fl.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -1517,7 +1523,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/slider-filter.png/sprit-fl.png");
+    background-image: url("../img/slider-filter/sprit-fl.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -1644,7 +1650,7 @@ body {
     z-index: 20;
 }
 .flag-new {
-    background: url("../img/icon-exit.png/label3.png") no-repeat 0 0;
+    background: url("../img/icon-exit/label3.png") no-repeat 0 0;
 }
 .item__actions  {
     position: absolute;
@@ -1827,7 +1833,7 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 
 /*сss код для sprite*/
 .sprite {
-    background-image: url("../img/icon-exit.png/sprite.png");
+    background-image: url("../img/icon-exit/sprite.png");
     background-repeat: no-repeat;
     display: block;
 }
@@ -1918,7 +1924,7 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 
 
 .sprit-fl {
-    background-image: url("../img/slider-filter.png/sprit-fl.png");
+    background-image: url("../img/slider-filter/sprit-fl.png");
     background-repeat: no-repeat;
     display: block;
 }
@@ -1947,7 +1953,7 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
     background-position: -5px -106px;
 }
 .sprite2 {
-    background-image: url("../img/icon-exit.png/sprite2.png");
+    background-image: url("../img/icon-exit/sprite2.png");
     background-repeat: no-repeat;
     display: block;
 }
