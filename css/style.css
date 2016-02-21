@@ -970,7 +970,8 @@ body {
 	margin-bottom: 20px;
 }
 .list-styled ul {
-	padding-left: 0;
+	padding: 0;
+	margin: 0;
 	margin-bottom: 10px;
 	
 }
