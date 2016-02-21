@@ -9,6 +9,7 @@ body {
     font-weight: normal;
     font-family: "Cuprum Italic","PT Sans", "Arial", sans-serif;
 }
+
 .clearfix::after {
   content: "";
 
@@ -56,13 +57,12 @@ body {
 .header-top__search {
 	float: left;
 	position: relative;
-	margin: 0;
-	max-width: 270px;
+	
 }
 .header-top__search input[type="submit"] {
     position: absolute;
     top: 12px;
-    left: 15px;
+    left: 20px;
     width: 17px;
     height: 17px;
     padding-top: 13px;
@@ -74,16 +74,10 @@ body {
     opacity: 0.3;
  }
    
-.header-top__search input[type="submit"]:hover {
-  opacity: 1;
-
-}
 .header-top__search input[type="search"] {
-	position: absolute;
-	top: 0px;
-	left: 40px;
 	height: 40px;
-	width: 230px;
+	width: 250px;
+	padding-left: 40px;
 	outline: none;
 	font-size: 17px;
 	line-height: 18px;
@@ -101,10 +95,17 @@ body {
 	background-color: #fff;
 	color: #000;
 }
+.header-top__search input[type="search"]:focus + input[type="submit"]{
+	opacity: 1; 
+}
+.header-top__search input[type="search"]:hover + input[type="submit"]{
+	opacity: 1; 
+}
 .header-top__panel {
 	float: right;
 	list-style: none;
     font-size: 0;
+    padding:0;
 }
 .header-top__panel li {
 	display: inline-block;
@@ -924,13 +925,13 @@ body {
 	background-color: #ee3643;
 	border-radius: 2px;
 }
-#services__menu a:nth-child(1):active~.services__items .services__item:nth-child(1) {
+.services__menu a:nth-child(1):active~.services__items .services__item:nth-child(1) {
 	display: block;
 }
-#services__menu a:nth-child(2):active~.services__items .services__item:nth-child(2) {
+.services__menu a:nth-child(2):active~.services__items .services__item:nth-child(2) {
 	display: block;
 }
-#services__menu a:nth-child(3):active~.services__items .services__item:nth-child(3) {
+.services__menu a:nth-child(3):active~.services__items .services__item:nth-child(3) {
 	display: block;
 }
 .main__left-block {
@@ -961,10 +962,12 @@ body {
 	margin-bottom: 20px;
 }
 .list-styled ul {
+	
 	margin-bottom: 10px;
 	
 }
 .list-styled li {
+	padding-left: 0;
 	font-size: 18px;
 	line-height: 20px;
     font-weight: bold;
@@ -973,10 +976,20 @@ body {
 }
 .list-styled a::before {
 	content: "";
-	background: url("../img/services-img.png/red-line.png") no-repeat;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	display: block;
+	width: 25px;
+	border: 1px solid #fb565a;
+	
 }
 	
 .list-styled a {
+	display: block;
+	position: relative;
+	margin: 0 0;
+	padding-left: 37px;
 	text-decoration: none;
 	color: #000000;
        
