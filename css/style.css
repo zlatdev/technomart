@@ -1528,34 +1528,28 @@ a.icon {
 	border-bottom: none;
 }
 .catalog-sorting__guides a:first-child {
-	
-	
-	width: 0;
-    height: 0;
-    border: 10px solid #f7f3ec;
-    border-bottom-color: #c6c2bd;
+ width: 0;
+ height: 0;
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-bottom: 10px solid #c6c2bd;
+ 
 }
 .catalog-sorting__guides a:last-child {
-	
-	
-	width: 0;
+
+ width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 10px solid #c6c2bd;
 }
-.catalog-sorting__guides:hover a:first-child::before {
-    border-bottom: 10px solid #010101;
+.catalog-sorting__guides a:first-child:hover{
+  border-bottom: 10px solid #ee3643;
 }
-.catalog-sorting__guides:hover a:last-child::before{
-    border-top: 10px solid #010101;
+.catalog-sorting__guides a:last-child:hover{
+  border-top: 10px solid #ee3643;
 }
-.catalog-sorting__guides:active a:first-child::before {
-    border-bottom: 10px solid #ee3643;
-}
-.catalog-sorting__guides:active a:last-child::before {
-    border-top: 10px solid #ee3643;
-}
+
 .catalog-list {
 	min-height: 700px;
     margin-bottom: 52px;
