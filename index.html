@@ -7,6 +7,20 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $("#write_us").click(function() {
+        if ($(".modal-content").hasClass("modal-content")) {
+          event.preventDefault();
+          $(".modal-content").css("display","block");
+        }
+      });
+
+    });
+
+
+    </script>
   </head>
   <body>
     <header class="header-main">
@@ -262,7 +276,7 @@
     			    	<h2>КОНТАКТЫ</h2>
                 <p>Вы можете забрать товар сами,<br>Заехав в наш офис:</p>
                 <img src="img/map.png" height="158" width="300" ait="Карта">
-                <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                <a id="write_us" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
     			    </div>
     			</div>
     		</section>
