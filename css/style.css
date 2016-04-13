@@ -1966,7 +1966,7 @@ input[type="password"] {
 input {
 	padding-left: 14px;
 }
-textarea {
+input[type="textarea"] {
 	padding-top: 10px;
 	padding-left: 14px;
 }
@@ -2026,6 +2026,9 @@ textarea {
 
 .big-map-close::after {
   transform: rotate(-45deg);
+}
+.big-map {
+  display: none;
 }
 .big-map .map1 {
   display: none;
