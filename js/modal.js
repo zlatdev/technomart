@@ -4,11 +4,11 @@
 
   var link = document.querySelector(".write_us");
   var popup = document.querySelector(".modal-content");
-  var close = popup.querySelector(".modal-content-close");
+  var close = popup.querySelector(".modal-content__close");
   var login = popup.querySelector("[name=login-name]");
   var form = popup.querySelector("form");
-  var password = popup.querySelector("[name=password]");
-   var storage = localStorage.getItem("login-name");
+  var password = popup.querySelector("[name=email]");
+  var storage = localStorage.getItem("login-name");
 
 
   link.addEventListener("click", function(event) {
@@ -17,7 +17,7 @@
 
        if (storage) {
           login.value = storage;
-          password.focus();
+          email.focus();
         } else {
           login.focus();
         }
@@ -34,7 +34,7 @@
   form.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        if (!login.value || !password.value) {
+        if (!login.value || !email.value) {
           event.preventDefault();
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
@@ -53,3 +53,7 @@
           }
         }
       });
+
+  //Всплыващая карата
+
+
