@@ -2038,8 +2038,8 @@ input[type="textarea"] {
 }
 .modal-content__close {
 	position: absolute;
-    top: 30px;
-    right: -150px;
+    top: 10px;
+    left: 580px;
 	width: 22px;
     height: 22px;
     background-color: transparent;
