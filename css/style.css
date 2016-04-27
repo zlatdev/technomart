@@ -1927,7 +1927,7 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 
 @keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    transform: translateY(-100px);
   }
   70%  {
     transform: translateY(30px);
@@ -1960,14 +1960,14 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 	left: 550px;
 	min-height: 430px;
 	border-top: 9px solid #ee3643;
-	
 	background-color: #fff;
 	color: #000;
     box-shadow: 0 40px 40px 5px rgba(5,5,5,0.6);
+    z-index: 40;
 }
 .modal-content-show {
 	display: block;
-	animation: bounce 10s;
+	animation: bounce 0.6s;
 }
 .modal-error {
   animation: shake 0.6s;

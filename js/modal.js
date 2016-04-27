@@ -7,16 +7,16 @@
   var close = popup.querySelector(".modal-content__close");
   var login = popup.querySelector("[name=login-name]");
   var form = popup.querySelector("form");
-  var password = popup.querySelector("[name=email]");
-  var storage = localStorage.getItem("login-name");
-
-
+  var email = popup.querySelector("[name=email]");
+  var storage = window.localStorage;
+ 
+  
   link.addEventListener("click", function(event) {
        event.preventDefault();
        popup.classList.add("modal-content-show");
 
        if (storage) {
-          login.value = storage;
+          login.value = storage.getItem["login"];
           email.focus();
         } else {
           login.focus();
@@ -35,15 +35,16 @@
         event.preventDefault();
 
         if (!login.value || !email.value) {
-          event.preventDefault();
+          // event.preventDefault();
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
            
         } else {
-          localStorage.setItem("login", login.value);
-        }
-      });
+          
+          storage.setItem("login",login.value);
+          popup.classList.remove("modal-content-show");
+      }});
 
   window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
