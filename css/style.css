@@ -1917,7 +1917,42 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 	font-weight: normal;
 	color: #000000;
 }
+
+
+
+
+
+
 /*Всплывающая форма*/
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} 
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+
 .modal-content {
 	display: none;
 	position: absolute;
@@ -1929,6 +1964,18 @@ box-shadow: 0 10px 10px 4px rgba(5,5,5,0.2);
 	background-color: #fff;
 	color: #000;
     box-shadow: 0 40px 40px 5px rgba(5,5,5,0.6);
+}
+.modal-content-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+.modal-content__close {
+	position: absolute;
+	top: 2440px;
+	left: 650px;
 }
 .modal-content__top {
 	height: 270px;
@@ -1989,6 +2036,38 @@ input[type="textarea"] {
 	font-family: "Cuprum","Arial", sans-serif;
 	font-weight: normal;
 }
+.modal-content__close {
+	position: absolute;
+    top: 30px;
+    right: -150px;
+	width: 22px;
+    height: 22px;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.modal-content__close::before,
+.modal-content__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 19px;
+  height: 3px;
+  background-color: #ee3643;
+  border-radius: 1px;
+}
+.modal-content__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content__close::after {
+  transform: rotate(-45deg);
+}
+
+/*Всплывающая карта*/
 .big-map {
 	position: absolute;
 	top: 2420px;
