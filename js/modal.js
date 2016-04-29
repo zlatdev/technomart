@@ -57,4 +57,27 @@
 
   //Всплыващая карата
 
+    var mapOpen = document.querySelector(".js-open-map");
+    var mapPopup = document.querySelector(".modal-big-map");
+    var mapClose = mapPopup.querySelector(".big-map-close");
+   /* var mapBigPopup = document.querySelector(".modal-bigest-map");
+    var mapBigClose = mapPopup.querySelector(".bigest-map-close");*/
 
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      });
