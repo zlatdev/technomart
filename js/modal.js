@@ -16,9 +16,10 @@
        popup.classList.add("modal-content-show");
 
        if (storage) {
-          login.value = storage.getItem["login"];
+          login.value = storage.getItem("login");
           email.focus();
         } else {
+          login.value="";
           login.focus();
         }
 
@@ -55,7 +56,7 @@
         }
       });
 
-  //Всплыващая карата
+  //Всплыващая карта
 
     var map1Open = document.querySelector(".js-open-map");
     var mapPopup = document.querySelector(".modal-big-map");
@@ -87,6 +88,9 @@
       mapClose.addEventListener("click", function(event) {
         event.preventDefault();
         mapPopup.classList.remove("modal-content-show");
+        map2BigPopup.style.display = "none";
+        map2BigOpen.style.display = "none";
+
       });
 
 
@@ -95,14 +99,10 @@
         if (event.keyCode === 27) {
           if (mapPopup.classList.contains("modal-content-show")) {
             mapPopup.classList.remove("modal-content-show");
+            map2BigPopup.style.display = "none";
+            map2BigOpen.style.display = "none";
+
           }
         }
       });
 
-       window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapBigPopup.classList.contains("modal-content-show")) {
-            mapBigPopup.classList.remove("modal-content-show");
-          }
-        }
-      });
